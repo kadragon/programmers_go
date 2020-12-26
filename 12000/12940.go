@@ -2,7 +2,7 @@
 
 package main
 
-func gcd(a, b int) int {
+func gcd0(a, b int) int {
 	for b != 0 {
 		a, b = b, a%b
 	}
@@ -12,7 +12,7 @@ func gcd(a, b int) int {
 
 func p12940(n int, m int) []int {
 	var a int
-	a = gcd(n, m)
+	a = gcd0(n, m)
 
 	return []int{a, n / a * m}
 }
